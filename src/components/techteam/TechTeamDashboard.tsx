@@ -18,7 +18,7 @@ export function TechTeamDashboard() {
   const stats = [
     { label: 'Upcoming Events', value: totalUpcoming, icon: CalendarCheck, color: 'text-emerald-400' },
     { label: 'Pending Requests', value: totalPending, icon: Clock3, color: 'text-gold-400' },
-    { label: 'Team Members', value: 6, icon: Users, color: 'text-blue-400' },
+    { label: 'Team Members', value: 7, icon: Users, color: 'text-blue-400' },
     { label: 'Resources Available', value: 10, icon: BookOpen, color: 'text-purple-400' },
   ];
 
@@ -131,14 +131,14 @@ export function TechTeamDashboard() {
               On Duty Today
             </h3>
             <div className="space-y-3">
-              {['Alex Thompson', 'Samira Patel'].map(name => (
-                <div key={name} className="flex items-center gap-3 glass-light rounded-lg p-2">
+              {[{ name: 'Noah T', role: 'Veteran' }, { name: 'Lizzie', role: 'Veteran' }].map(m => (
+                <div key={m.name} className="flex items-center gap-3 glass-light rounded-lg p-2">
                   <div className="w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center text-xs font-bold text-gold-400">
-                    {name.split(' ').map(n => n[0]).join('')}
+                    {m.name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div>
-                    <p className="text-sm">{name}</p>
-                    <p className="text-xs text-white/40">Available</p>
+                    <p className="text-sm">{m.name}</p>
+                    <p className="text-xs text-white/40">{m.role} · Available</p>
                   </div>
                   <div className="ml-auto w-2 h-2 rounded-full bg-emerald-400" />
                 </div>

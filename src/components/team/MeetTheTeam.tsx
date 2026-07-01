@@ -19,7 +19,16 @@ export function MeetTheTeam() {
                 <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
               </div>
               <h3 className="font-semibold">{member.name}</h3>
-              <p className="text-sm text-gold-400">{member.role}</p>
+              <div className="flex items-center justify-center gap-2 mt-1">
+                <p className="text-sm text-gold-400">{member.role}</p>
+                <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${
+                  member.rank === 'Veteran'
+                    ? 'bg-gold-500/20 text-gold-400 border border-gold-500/30'
+                    : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                }`}>
+                  {member.rank === 'Veteran' ? 'V' : 'R'}
+                </span>
+              </div>
             </div>
 
             <div className="space-y-3 text-sm">

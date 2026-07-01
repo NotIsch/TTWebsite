@@ -2,6 +2,7 @@ export interface TeamMember {
   id: number;
   name: string;
   role: string;
+  rank: 'Veteran' | 'Rookie';
   photo: string;
   expertise: string[];
   favouriteEquipment: string[];
@@ -11,54 +12,70 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Alex Thompson",
-    role: "Head of Tech",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
-    expertise: ["Lighting Design", "Sound Engineering", "Network Setup"],
-    favouriteEquipment: ["ETC EOS Ion", "Yamaha CL5"],
-    certifications: ["ETC Certified", "DBS Checked"]
+    name: "Will Cr",
+    role: "Tech Team Member",
+    rank: "Rookie",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Will",
+    expertise: ["Lighting"],
+    favouriteEquipment: ["ETC EOS Ion"],
+    certifications: ["In-House Training"]
   },
   {
     id: 2,
-    name: "Samira Patel",
-    role: "Lighting Specialist",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Samira",
-    expertise: ["ETC Programming", "BlenderDMX", "Rigging"],
-    favouriteEquipment: ["ETC EOS Ion", "Martin MAC Aura"],
-    certifications: ["ETC Programming Level 2"]
+    name: "Noah T",
+    role: "Tech Team Member",
+    rank: "Veteran",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Noah",
+    expertise: ["Lighting Design", "Sound Engineering", "Network Setup"],
+    favouriteEquipment: ["ETC EOS Ion", "Yamaha CL5"],
+    certifications: ["ETC Certified", "Sound Engineering Level 1"]
   },
   {
     id: 3,
-    name: "James Wilson",
-    role: "Sound Engineer",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
-    expertise: ["Live Sound", "Recording", "Radio Mics"],
-    favouriteEquipment: ["Yamaha CL5", "Shure ULX-D"],
-    certifications: ["Audio Engineering Diploma"]
+    name: "Daniel S",
+    role: "Tech Team Member",
+    rank: "Rookie",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Daniel",
+    expertise: ["Sound", "Stage Crew"],
+    favouriteEquipment: ["Yamaha CL5"],
+    certifications: ["In-House Training"]
   },
   {
     id: 4,
-    name: "Emily Chen",
-    role: "Stage Manager",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily",
-    expertise: ["Stage Management", "Production Planning", "Health & Safety"],
-    favouriteEquipment: ["QLab", "Clear-Com"],
-    certifications: ["Stage Management Certified"]
+    name: "Lizzie",
+    role: "Tech Team Member",
+    rank: "Veteran",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lizzie",
+    expertise: ["Lighting Programming", "Stage Management", "Production Planning"],
+    favouriteEquipment: ["ETC EOS Ion", "QLab"],
+    certifications: ["ETC Programming Level 1", "Stage Management Certified"]
   },
   {
     id: 5,
-    name: "Marcus Brown",
-    role: "AV Technician",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus",
-    expertise: ["Projectors", "Streaming", "LED Walls"],
-    favouriteEquipment: ["Blackmagic ATEM", "Epson Projectors"],
-    certifications: ["AVIXA Certified"]
+    name: "Alfie",
+    role: "Tech Team Member",
+    rank: "Rookie",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alfie",
+    expertise: ["Lighting", "Stage Crew"],
+    favouriteEquipment: ["ETC EOS Ion"],
+    certifications: ["In-House Training"]
   },
   {
     id: 6,
-    name: "Olivia Taylor",
-    role: "Tech Team Trainee",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia",
+    name: "Mya",
+    role: "Tech Team Member",
+    rank: "Rookie",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mya",
+    expertise: ["Sound", "Stage Crew"],
+    favouriteEquipment: ["Shure ULX-D"],
+    certifications: ["In-House Training"]
+  },
+  {
+    id: 7,
+    name: "Lochlan F",
+    role: "Tech Team Member",
+    rank: "Rookie",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lochlan",
     expertise: ["Lighting", "Sound", "Stage Crew"],
     favouriteEquipment: ["ETC EOS Ion"],
     certifications: ["In-House Training"]
