@@ -3,11 +3,11 @@ import { MessageSquare, Users, Volume2, Activity } from 'lucide-react';
 
 export function DiscordWidget() {
   const onlineMembers = [
-    { name: 'Alex Thompson', role: 'Head of Tech', status: 'online' },
-    { name: 'Samira Patel', role: 'Lighting', status: 'online' },
-    { name: 'James Wilson', role: 'Sound', status: 'idle' },
-    { name: 'Emily Chen', role: 'Stage Manager', status: 'online' },
-    { name: 'Marcus Brown', role: 'AV', status: 'offline' },
+    { name: 'Noah T', role: 'Veteran', status: 'online' },
+    { name: 'Lizzie', role: 'Veteran', status: 'online' },
+    { name: 'Will Cr', role: 'Rookie', status: 'idle' },
+    { name: 'Lochlan F', role: 'Rookie', status: 'online' },
+    { name: 'Daniel S', role: 'Rookie', status: 'offline' },
   ];
 
   const voiceChannels = ['🎭 Production Chat', '🎵 Music Bot', '🔧 Tech Support'];
